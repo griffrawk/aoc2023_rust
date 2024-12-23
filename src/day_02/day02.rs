@@ -4,7 +4,7 @@ use std::collections::HashMap;
 use std::fs;
 
 #[allow(dead_code)]
-pub fn part_one_two(file: &str) -> (u32, u32) {
+fn part_one_two(file: &str) -> (u32, u32) {
     let mut sum_up: u32 = 0;
     let mut maxima: u32 = 0;
     let contents = fs::read_to_string(file).expect("Can't read the file");
