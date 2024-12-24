@@ -20,7 +20,7 @@ pub fn part_one(data: &str) -> u32 {
 
     // Now we've got to do something with the games and find an answer
     dbg!(&games);
-        
+
     // but for the moment, cheat!
     4361
 }
@@ -47,18 +47,15 @@ pub fn part_two(data: &str) -> u32 {
     // for part in numbers {
     //     print(part)
 
-        // the ranges would need to be adjusted to lowerBound - 1, upperBound + 1
-        // (problem if eol?) so that a range comparison accounts for diagonally adjacent
-        // numbers and symbols eg:
-        // ...452....
-        // ..*.......
-        // 123.......
+    // the ranges would need to be adjusted to lowerBound - 1, upperBound + 1
+    // (problem if eol?) so that a range comparison accounts for diagonally adjacent
+    // numbers and symbols eg:
+    // ...452....
+    // ..*.......
+    // 123.......
 
-        467835
+    467835
 }
-
-
-
 
 #[derive(Debug, PartialEq)]
 enum Value<'a> {
@@ -141,6 +138,3 @@ mod tests {
         assert_eq!(result, 80253814);
     }
 }
-
-
-
