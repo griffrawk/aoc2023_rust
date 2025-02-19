@@ -1,3 +1,3 @@
-mod day_01;
-mod day_02;
-mod day_03;
+mod day01;
+mod day02;
+mod day03;

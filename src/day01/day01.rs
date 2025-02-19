@@ -3,7 +3,7 @@ mod tests {
 
     use std::fs;
 
-    pub fn part_one(file: &str) -> u32 {
+    fn part_one(file: &str) -> u32 {
         // read a file per line, for each line filter for digits and concatenate them
         // sum the first and last digit of each line as a new number
         // eg '1234' -> sum_up += 14
@@ -61,25 +61,25 @@ mod tests {
 
     #[test]
     fn test_part_one_test() {
-        let result: u32 = part_one("src/day_01/day01_test.txt");
+        let result: u32 = part_one("src/day01/day01_test.txt");
         assert_eq!(result, 142);
     }
 
     #[test]
     fn test_part_one_data() {
-        let result = part_one("src/day_01/day01_data.txt");
+        let result = part_one("src/day01/day01_data.txt");
         assert_eq!(result, 54877);
     }
 
     #[test]
     fn test_part_two() {
-        let result = part_two("src/day_01/day01_test_part2.txt");
+        let result = part_two("src/day01/day01_test_part2.txt");
         assert_eq!(result, 281);
     }
 
     #[test]
     fn test_part_two_data() {
-        let result = part_two("src/day_01/day01_data.txt");
+        let result = part_two("src/day01/day01_data.txt");
         assert_eq!(result, 54100);
     }
 }
